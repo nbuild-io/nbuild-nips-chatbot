@@ -25,6 +25,7 @@ module.exports = defineConfig([
         {
           conditionalAssign: false,
           returnAssign: false,
+          enforceForArrowConditionals: false,
           ignoreJSX: "all",
         },
       ],
