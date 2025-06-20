@@ -1,16 +1,17 @@
-import { FunctionComponent } from "react"
+import { FunctionComponent, ReactNode } from "react"
+
 import { H1 } from "@expo/html-elements"
 import { TextProps } from "react-native"
 import styled from "styled-components/native"
 import { useFonts } from "expo-font"
 
 type HeadingProps = TextProps & {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export const Heading: FunctionComponent<HeadingProps> = ({ children }) => {
   const [fontsLoaded] = useFonts({
-    "ABCWhyteInktrap-Heavy": require("../../assets/fonts/ABCWhyteInktrap-Heavy-Trial.otf"),
+    "ABCWhyteInktrap-Heavy": require("@/assets/fonts/ABCWhyteInktrap-Heavy-Trial.otf"),
   })
 
   if (!fontsLoaded) {
@@ -27,6 +28,6 @@ const StyledHeading = styled(H1)`
   font-style: normal;
   font-weight: 800;
   line-height: 48px;
-  margin: 8px 0;
+  margin: 0px;
   text-align: center;
 `
