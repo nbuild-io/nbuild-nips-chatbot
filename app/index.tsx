@@ -6,25 +6,23 @@ import { Subheading } from "@/components/Subheading"
 import { View } from "react-native"
 import styled from "styled-components/native"
 
-export default function Index() {
-  return (
-    <Background>
-      <AlignSpaceBetween>
-        <HeadingContainer>
-          <Heading>Understand Nostr NIPs in Seconds</Heading>
-          <Subheading>
-            No more digging through specs. Just ask your question and get a
-            precise, developer-focused answer in real time.
-          </Subheading>
-        </HeadingContainer>
-        <View>
-          <ChatInput />
-          <Footer />
-        </View>
-      </AlignSpaceBetween>
-    </Background>
-  )
-}
+const Index = () => (
+  <Background>
+    <AlignSpaceBetween>
+      <HeadingContainer>
+        <Heading>Understand Nostr NIPs in Seconds</Heading>
+        <Subheading>
+          No more digging through specs. Just ask your question and get a
+          precise, developer-focused answer in real time.
+        </Subheading>
+      </HeadingContainer>
+      <View>
+        <ChatInput />
+        <Footer />
+      </View>
+    </AlignSpaceBetween>
+  </Background>
+)
 
 const AlignSpaceBetween = styled.View`
   flex: 1;
@@ -36,3 +34,5 @@ const HeadingContainer = styled.View`
   padding: 72px 16px 16px;
   gap: 16px;
 `
+
+export default Index

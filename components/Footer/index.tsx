@@ -28,8 +28,8 @@ export const Footer: FunctionComponent = () => {
           Terms of Use
         </StyledLink>
         <BoldText $isMobile={isMobile}>&nbsp;|&nbsp;</BoldText>
-        <StyledLink $isMobile={isMobile} href="/impressum">
-          Impressum
+        <StyledLink $isMobile={isMobile} href="/imprint">
+          Imprint
         </StyledLink>
       </Links>
     </StyledFooter>
