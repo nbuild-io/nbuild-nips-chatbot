@@ -1,7 +1,7 @@
 {
   "name": "nbuild-nips-chatbot",
   "main": "expo-router/entry",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "scripts": {
     "android": "expo start --android",
     "ios": "expo start --ios",
