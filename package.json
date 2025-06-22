@@ -1,12 +1,12 @@
 {
-  "name": "nips-chatbot",
+  "name": "nbuild-nips-chatbot",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "build:web": "expo export --platform web",
     "lint": "expo lint"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "expo-symbols": "~0.4.5",
     "expo-system-ui": "~5.0.9",
     "expo-web-browser": "~14.2.0",
+    "firebase": "^11.9.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.4",

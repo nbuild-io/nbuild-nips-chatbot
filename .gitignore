@@ -25,3 +25,7 @@ expo-env.d.ts
 # Source files
 .env*.local
 *.tsbuildinfo
+
+# Google Firebase
+firebaseConfig.js
+.firebaserc
