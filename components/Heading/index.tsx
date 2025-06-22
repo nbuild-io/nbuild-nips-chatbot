@@ -11,6 +11,7 @@ type HeadingProps = TextProps & {
 
 export const Heading: FunctionComponent<HeadingProps> = ({ children }) => {
   const [fontsLoaded] = useFonts({
+    // eslint-disable-next-line max-len
     "ABCWhyteInktrap-Heavy": require("@/assets/fonts/ABCWhyteInktrap-Heavy-Trial.otf"),
   })
 
